@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAS & jQuery</title>
+    <script>
+        let name = prompt("당신의 이름은 무엇인가요?");
+        let height = prompt("키가 몇이에요?");
+        let weight = prompt("몸무게가 몇이에요?");
+        
+        let normal_w = (height - 100) * 0.9;
+        let result = weight >= normal_w - 5 && weight <= normal_w + 5;
+        
+        result = result ? "평균체중이시네요":"살좀빼세요~~";
+        
+        document.write(name + "님은 "+ result);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
